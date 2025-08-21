@@ -13,7 +13,9 @@ table, th, td {
 }
 th {
     background-color: #dbd9d9;
+    color: #0217f4;
 }
 td:hover {
     background-color: #dbd9d9;
+    color: #0217f4;
 }
