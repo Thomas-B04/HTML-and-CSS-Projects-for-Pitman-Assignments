@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bakery News — Semantic HTML Demo</title>
+</head>
+<body>
+  <header>
+    <h1>Sweet-ums Bakery Updates</h1>
+    <p>
+      Today is
+      <time datetime="2025-08-27">August 27, 2025</time>
+    </p>
+  </header>
+
+  <main>
+    <!-- ARTICLE: a self-contained piece of content -->
+    <article>
+      <h2>Launching Our Autumn Menu</h2>
+      <p>
+        Posted on
+        <time datetime="2025-09-01">September 1, 2025</time>
+        by Chef Ava
+      </p>
+
+      <p>
+        We're rolling out spiced pumpkin loaves, maple pecan croissants, and apple-cider doughnuts.
+        Pre-orders open from
+        <time datetime="2025-08-30T09:00">Aug 30, 9:00</time>
+        to
+        <time datetime="2025-08-31T18:00">Aug 31, 18:00</time>.
+      </p>
+
+      <!-- DETAILS / SUMMARY: collapsible extra information -->
+      <details>
+        <summary>See nutrition notes for the Pumpkin Loaf</summary>
+        <p>
+          Per slice (~85g): 270 kcal, 4g protein, 38g carbs, 11g fat.
+          Best enjoyed within
+          <time datetime="P3D">3 days</time>
+          of baking.
+        </p>
+      </details>
+
+      <details>
+        <summary>Allergen information</summary>
+        <ul>
+          <li>Pecan croissants contain <strong>tree nuts</strong> and <strong>gluten</strong>.</li>
+          <li>Gluten-free options available every <time datetime="2025-09-02">Tuesday</time> and <time datetime="2025-09-05">Friday</time>.</li>
+        </ul>
+      </details>
+    </article>
+
+    <!-- Another ARTICLE -->
+    <article>
+      <h2>Extended Weekend Hours</h2>
+      <p>
+        Effective from <time datetime="2025-09-06">September 6, 2025</time>
+      </p>
+
+      <p>
+        Saturday: <time datetime="09:00">09:00</time>-<time datetime="19:00">19:00</time><br>
+        Sunday: <time datetime="08:30">08:30</time>-<time datetime="16:00">16:00</time>
+      </p>
+
+      <details>
+        <summary>Why we changed our hours</summary>
+        <p>
+          We're aligning baking cycles with morning demand and offering an early pickup window for custom cakes.
+          Pre-dawn pickups are available from <time datetime="05:30">05:30</time> by request.
+        </p>
+      </details>
+    </article>
+  </main>
+
+  <footer>
+    © <time datetime="2025">2025</time> Sweet-ums Bakery — All rights reserved.
+  </footer>
+</body>
+</html>
