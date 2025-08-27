@@ -2,9 +2,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./JavaScript/Project_JS.js" defer></script>
     <title>Main Page</title>
 </head>
 <body>
     
+    <!-- Start Nav -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- End Nav -->
+
+    <!-- Home Start -->
+     <section id="home">
+        <h1>Sweet-ums</h1>
+        <p>Your one-stop shop for all things sweet!</p>
+     </section>
+    <!-- Home End -->
+
+    <!-- Gallery Start -->
+     <section id="gallery">
+        <h2>Gallery</h2>
+
+        <!-- Gallery Container -->
+         <div class="gallery-container">
+             <img src="image1.jpg" alt="Gallery Image 1">
+             <img src="image2.jpg" alt="Gallery Image 2">
+             <img src="image3.jpg" alt="Gallery Image 3">
+         </div>
+        <!-- Gallery Container End -->
+     </section>
+
+     <!-- Contact Form Start -->
+      <section id="contact">
+
+        <div>
+            <h2>Reservations</h2>
+            <p>Please fill out the form below to make a reservation with our bakery.</p>
+        </div>
+
+        <form action="#" method="post">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname">Last Name: </label>
+            <input type="text" name="lname" id="lname" required>
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="phone">Phone: </label>
+            <input type="tel" name="phone" id="phone" required>
+        </form>
+      </section>
+      <!-- Contact Form End -->
+
+      <!-- Footer -->
+      <footer>
+          <p>&copy; <span id="year"></span> Sweet-ums. All rights reserved.</p>
+      </footer>
 </body>
 </html>
