@@ -1,0 +1,111 @@
+/* Base reset */
+html {
+  font-family: sans-serif;
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-size: 1.4rem;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background: #fff;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  color: #e91c1c;
+  line-height: 1.6;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 2px;
+  margin: 5px auto 40px;
+  background: #e91c1c;
+  box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  color: #e91c1c;
+  line-height: 1.6;
+}
+
+h3 {
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin: 25px 0 0;
+  line-height: 1.6;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.heading-padding {
+  padding-bottom: 40px;
+}
+
+/* Layout */
+section {
+  padding: 50px 0;
+}
+
+.container {
+  width: min(1200px, 100% - 30px);
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.navbar {
+  height: 105px;
+  display: flex;
+  align-items: center;
+}
+
+/* Menu container (sticky nav) */
+.menu-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Hero section */
+#home {
+  background: url("../images/Sweet-ums.png") center/cover fixed no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 350px 15px 500px;
+}
