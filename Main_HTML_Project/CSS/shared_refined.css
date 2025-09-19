@@ -1,22 +1,27 @@
-/* Base reset */
+/* Base */
 html {
   font-family: sans-serif;
-  font-size: 62.5%; /* 1rem = 10px */
+  font-size: 62.5%; /* makes 1rem = 10px */
 }
 
 body {
-  font-size: 1.4rem;
   margin: 0;
+  font-size: 1.4rem;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #333;
   background: #fff;
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Open Sans", sans-serif;
-  margin: 0;
+  margin: 0 0 1rem;
 }
 
 h1 {
@@ -25,7 +30,7 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   color: #e91c1c;
-  line-height: 1.6;
+  line-height: 1.5;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -41,71 +46,167 @@ h1::after {
 
 h2 {
   color: #e91c1c;
-  line-height: 1.6;
+  font-size: 2.2rem;
 }
-
 h3 {
-  line-height: 1.4;
-  margin-bottom: 20px;
+  font-size: 1.8rem;
 }
-
 h4 {
   font-size: 2.2rem;
   font-weight: 900;
-  margin: 25px 0 0;
-  line-height: 1.6;
+  margin-top: 2rem;
 }
 
+/* Text */
 p {
   font-weight: 300;
-  line-height: 1.8;
   margin-bottom: 1.5rem;
 }
 
-/* Utility classes */
-.text-center {
-  text-align: center;
-}
-
-.heading-padding {
-  padding-bottom: 40px;
-}
-
 /* Layout */
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 section {
   padding: 50px 0;
 }
 
-.container {
-  width: min(1200px, 100% - 30px);
-  margin: 0 auto;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.navbar {
-  height: 105px;
-  display: flex;
-  align-items: center;
-}
-
-/* Menu container (sticky nav) */
+/* Navbar */
+.navbar,
 .menu-container {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   z-index: 100;
   background: rgba(255, 255, 255, 0.5);
 }
 
-/* Hero section */
+/* Hero / Home */
 #home {
-  background: url("../images/Sweet-ums.png") center/cover fixed no-repeat;
+  background: url("../images/Sweet-ums.png") center/cover fixed;
   color: #fff;
+  padding: 350px 0 500px;
   text-align: center;
-  padding: 350px 15px 500px;
+}
+
+.head-main {
+  font-size: 4.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
+  border: 5px double #fff;
+  padding: 10px;
+}
+
+.head-sub-main {
+  font-size: 2.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+.head-last {
+  font-size: 1.8rem;
+  font-weight: 900;
+  border: 1px dotted #fff;
+  padding: 5px 20px;
+}
+
+/* Flex container */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: rgba(100, 65, 0, 0.3);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact / Form */
+#contact {
+  background: #f5f3f3;
+}
+
+.reservation {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 8px;
+  background: rgba(100, 65, 0, 0.3);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.reservation h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.reservation span {
+  font-weight: 900;
+  font-size: 2rem;
+  font-variant: small-caps;
+}
+
+.reservation input,
+.reservation form {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 7px;
+  border: 1px solid #808080;
+  font-family: "Raleway", sans-serif;
+}
+
+.reservation input[type="text"] {
+  background: #13161b;
+  color: #8d8e8f;
+}
+
+.reservation input[type="text"]:hover {
+  box-shadow: 0 0 8px rgba(100, 65, 0, 0.8);
+}
+
+.submit input[type="submit"] {
+  background: #797a7b;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 900;
+  border: none;
+  border-radius: 7px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit input[type="submit"]:hover {
+  background: #8d8e8f;
+  color: #000;
+  box-shadow: inset 1px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+#footer {
+  background: rgba(100, 65, 0, 0.3);
+  color: #000;
+  text-align: right;
+  padding: 20px 50px;
+}
+
+/* Media Queries */
+@media (max-width: 640px) {
+  .head-main {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .head-main {
+    font-size: 2.4rem;
+  }
 }
