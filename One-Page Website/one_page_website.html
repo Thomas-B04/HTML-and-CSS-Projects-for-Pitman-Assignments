@@ -1,82 +1,108 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/One_Page_Website.CSS">
+  <head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="./CSS/One_Page_Website.CSS" />
+    <!-- Cleave.js library for input formatting -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+    <!-- Link to external JavaScript file -->
     <script src="./JavaScript/One_Page_Website.js"></script>
     <title>One Page Website</title>
-</head>
-<body>
-    <!-- Header Section -->
+  </head>
+  <body>
+    <!-- Header Section: Site title and navigation menu -->
     <header>
-        <h2>My One Page Website</h2>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#video">Video</a></li>
-                <li><a href="#contact_form">Contact</a></li>
-                <li><a href="#footer">Footer</a></li>
-            </ul>
-        </nav>
+      <h2>My One Page Website</h2>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#contact_form">Contact</a></li>
+          <li><a href="#footer">Footer</a></li>
+        </ul>
+      </nav>
     </header>
     <p></p>
-    <!-- Home Section -->
+    <!-- Home Section: Introduction and welcome message -->
     <section id="home">
-        <h1>Welcome to my one page Website</h1>
-        <p><strong style="font-size: large;">Hello! This is my simple one-page website for my assignment. Scroll down to see pictures, a video, and a contact form. Use the navigation above to jump around the page! I'm gonna add some filler here</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, est. Quos, labore voluptatum. Assumenda asperiores provident reprehenderit, nemo velit corporis. Dolorem rem, tenetur alias delectus vitae repellendus distinctio voluptatem blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum quae asperiores deserunt blanditiis nesciunt tempore impedit neque eveniet commodi repellendus aperiam ex totam sit, dicta debitis voluptates. Magni, veniam!</p>
+      <h1>Welcome to my one page Website</h1>
+      <p>
+        <strong style="font-size: large">
+          <!-- Brief introduction -->
+          Hello! This is my simple one-page website for my assignment. Scroll
+          down to see pictures, a video, and a contact form. Use the navigation
+          above to jump around the page! I'm gonna add some filler here
+        </strong>
+        <!-- Filler text -->
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, est.
+        Quos, labore voluptatum. Assumenda asperiores provident reprehenderit,
+        nemo velit corporis. Dolorem rem, tenetur alias delectus vitae
+        repellendus distinctio voluptatem blanditiis? Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. In harum quae asperiores deserunt
+        blanditiis nesciunt tempore impedit neque eveniet commodi repellendus
+        aperiam ex totam sit, dicta debitis voluptates. Magni, veniam!
+      </p>
     </section>
 
-    <!-- Gallery Section -->
-
+    <!-- Gallery Section: Displays images -->
     <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery">
-            <img src="./Images/Image_1.jpeg" alt="Image 1">
-            <img src="./Images/Image_2.jpeg" alt="Image 2">
-            <img src="./Images/Image_3.jpeg" alt="Image 3">
-        </div>
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="./Images/Image_1.jpeg" alt="Image 1" />
+        <img src="./Images/Image_2.jpeg" alt="Image 2" />
+        <img src="./Images/Image_3.jpeg" alt="Image 3" />
+      </div>
     </section>
 
-    <!-- Video Section -->
-
+    <!-- Video Section: Embedded YouTube video -->
     <section id="video">
-        <h2>Video</h2>
-        <div class="video-container">
-            <iframe width="560" height="300" src="https://www.youtube.com/embed/9z8FP8ear2Y?si=scIrJbZKU0w7sLOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+      <h2>Video</h2>
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="300"
+          src="https://www.youtube.com/embed/9z8FP8ear2Y?si=scIrJbZKU0w7sLOg"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
     </section>
 
-    <!-- Contact Form Section -->
-
+    <!-- Contact Form Section: Form for user messages -->
     <section id="contact_form">
-        <fieldset>
-            <legend>Contact Me</legend>
+      <fieldset>
+        <legend>Contact Me</legend>
         <form action="#" method="post">
-            <label for="name">Name:</label>
-            <br>
-            <input type="text" id="name" name="name" required><br>
+          <label for="name">Name:</label>
+          <br />
+          <input type="text" id="name" name="name" required /><br />
 
-            <label for="email">Email:</label>
-            <br>
-            <input type="email" id="email" name="email" required><br>
+          <label for="email">Email:</label>
+          <br />
+          <input type="email" id="email" name="email" required /><br />
 
-            <label for="phone">Phone:</label>
-            <br>
-            <input type="tel" id="phone" name="phone"><br>
+          <label for="phone">Phone:</label>
+          <br />
+          <input type="tel" id="phone" name="phone" /><br />
 
-            <label for="message">Message (optional):</label><br>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+          <label for="message">Message (optional):</label><br />
+          <textarea id="message" name="message" rows="4" cols="50"></textarea
+          ><br />
 
-            <input id="submitbtn" type="submit" value="Submit">
+          <input id="submitbtn" type="submit" value="Submit" />
         </form>
-        </fieldset>
+      </fieldset>
     </section>
 
-    <!-- Footer Section -->
-     <footer id="footer">
-        <p>&copy; 2025 My One Page Website</p>
-     </footer>
-</body>
+    <!-- Footer Section: Copyright notice -->
+    <footer id="footer">
+      <p>&copy; 2025 My One Page Website</p>
+    </footer>
+  </body>
 </html>
