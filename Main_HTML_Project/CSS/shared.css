@@ -1,11 +1,13 @@
+/* Base HTML styles */
 html {
   font-family: sans-serif;
-  font-size: 62.5%;
+  font-size: 62.5%; /* Makes 1rem = 10px for easier calculations */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
+/* Body styles */
 body {
   font-size: 14px;
   margin: 0;
@@ -15,11 +17,13 @@ body {
   background-color: #fff;
 }
 
+/* Ensure footer and nav are block elements */
 footer,
 nav {
   display: block;
 }
 
+/* Headings use Open Sans font */
 h1,
 h2,
 h3,
@@ -29,6 +33,7 @@ h6 {
   font-family: "open sans", sans-serif;
 }
 
+/* Main heading styles */
 h1 {
   line-height: 50px;
   font-weight: 900;
@@ -39,6 +44,7 @@ h1 {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
+/* Decorative line under h1 */
 h1::after {
   display: block;
   content: "";
@@ -49,16 +55,19 @@ h1::after {
   box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
+/* h2 styles */
 h2 {
   line-height: 50px;
   color: #e91c1c;
 }
 
+/* h3 styles */
 h3 {
   line-height: 30px;
   padding-bottom: 20px;
 }
 
+/* h4 styles */
 h4 {
   padding-top: 25px;
   line-height: 40px;
@@ -67,31 +76,37 @@ h4 {
   font-weight: 900;
 }
 
+/* Paragraph styles */
 p {
   font-weight: 300;
   line-height: 30px;
   padding-bottom: 15px;
 }
 
+/* Utility class for center alignment */
 .text-center {
   text-align: center;
 }
 
+/* Utility class for heading padding */
 .heading-padding {
   padding-bottom: 40px;
 }
 
+/* Section spacing */
 section {
   padding-top: 50px;
   margin-top: 50px;
 }
 
+/* Navbar styles */
 .navbar {
   height: 105px;
   max-height: 340px;
   display: inline-block;
 }
 
+/* Container for fixed width layouts */
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -99,6 +114,7 @@ section {
   margin-left: auto;
 }
 
+/* Fluid container for full width layouts */
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
@@ -107,11 +123,13 @@ section {
   width: 100%;
 }
 
+/* Row for grid layouts */
 .row {
   margin-right: -15px;
   margin-left: -15px;
 }
 
+/* Clearfix for floated elements */
 .clearfix::after,
 .container::after,
 .navbar::after {
@@ -120,17 +138,19 @@ section {
   clear: both;
 }
 
+/* Wrapper for full viewport content */
 .wrap {
   height: 100%;
   width: 100%;
   position: absolute;
-  /* This ensures that the images cannot render outside of their container without forcing any scrollbars */
+  /* Prevent images from overflowing container */
   overflow: hidden;
   top: 0;
   left: 0;
   text-align: center;
 }
 
+/* Menu container styles */
 .menu-container {
   max-height: 340px;
   margin: 0% auto;
@@ -144,6 +164,7 @@ section {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* Home section with background image */
 #home {
   background: url("../images/Sweet-ums.png") no-repeat 50% 50%;
   background-attachment: fixed;
@@ -159,6 +180,7 @@ section {
   padding-bottom: 500px;
 }
 
+/* Main heading on home */
 .head-main {
   text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
   font-variant: small-caps;
@@ -174,6 +196,7 @@ section {
   padding: 10px;
 }
 
+/* Subheading on home */
 .head-sub-main {
   font-size: 23px;
   font-weight: 500;
@@ -181,6 +204,7 @@ section {
   text-transform: uppercase;
 }
 
+/* Last heading on home */
 .head-last {
   font-size: 18px;
   font-weight: 900;
@@ -189,6 +213,7 @@ section {
   padding: 5px;
 }
 
+/* Flexbox container for layout */
 .flex-container {
   display: -webkit-flex;
   display: flex;
@@ -200,10 +225,12 @@ section {
   box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
+/* Contact section background */
 #contact {
   background-color: #f5f3f3;
 }
 
+/* Reservation form container */
 .reservation {
   width: 60%;
   padding: 10px;
@@ -214,6 +241,7 @@ section {
     1px 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
+/* Reservation heading styles */
 .reservation h2 {
   width: 70%;
   text-align: center;
@@ -225,6 +253,7 @@ section {
   word-spacing: 0pt;
 }
 
+/* Reservation heading span styles */
 .reservation h2 span {
   width: 70%;
   text-align: center;
@@ -237,12 +266,14 @@ section {
   word-spacing: 0.3pt;
 }
 
+/* Reservation paragraph styles */
 .reservation p {
   color: #13161b;
   width: 50%;
   margin: 0 auto;
 }
 
+/* Reservation form styles */
 .reservation form {
   font-size: 15px;
   outline: none;
@@ -258,6 +289,7 @@ section {
   font-family: "raleway", sans-serif;
 }
 
+/* Reservation text input styles */
 .reservation input[type="text"] {
   font-size: 15px;
   outline: none;
@@ -276,14 +308,17 @@ section {
   font-family: "raleway", sans-serif;
 }
 
+/* Hover effect for reservation text input */
 .reservation input[type="text"]:hover {
   box-shadow: 0 0 18px rgba(100, 65, 0, 0.8);
 }
 
+/* Spacer for form elements */
 .form-spacer {
   padding: 30px 39px;
 }
 
+/* Terms and conditions link styles */
 .terms {
   margin: 30px 1px 0 0;
   margin-top: 13%;
@@ -299,11 +334,13 @@ section {
   float: right;
 }
 
+/* Hover effect for terms link */
 .terms:hover {
   color: orange;
   text-decoration: underline;
 }
 
+/* Submit button styles */
 .submit input[type="submit"] {
   color: rgb(255, 255, 255);
   cursor: pointer;
@@ -322,12 +359,14 @@ section {
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
+/* Hover effect for submit button */
 .submit input[type="submit"]:hover {
   color: #000;
   background-color: #8d8e8f;
   box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
 }
 
+/* Footer styles */
 #footer {
   background-color: rgba(100, 65, 0, 0.3);
   color: #000;
@@ -336,30 +375,35 @@ section {
   text-align: right;
 }
 
+/* Responsive font size for head-main on medium screens */
 @media all and (max-width: 640px) and (min-width: 381px) {
   .head-main {
     font-size: 28px;
   }
 }
 
+/* Responsive font size for head-main on small screens */
 @media all and (max-width: 381px) and (min-width: 200px) {
   .head-main {
     font-size: 24px;
   }
 }
 
+/* Container width for tablets */
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
 }
 
+/* Container width for desktops */
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
 }
 
+/* Container width for large desktops */
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
