@@ -25,13 +25,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link text-light" href="#">About</a>
+              <a class="nav-link text-light" href="#about">About</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link text-light" href="#">Showtimes</a>
+              <a class="nav-link text-light" href="#showtimes">Showtimes</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link text-light" href="#">Deals</a>
+              <a class="nav-link text-light" href="#deals">Deals</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -63,7 +63,7 @@
           <div class="col-sm">
             <img class="img-fluid" src="./Images/pdx.jpg" alt="" />
           </div>
-          <div class="col-sm">
+          <div class="col-sm" id="about">
             <h3>Accomodations:</h3>
             <p>Features:</p>
             <ul>
@@ -79,22 +79,107 @@
             <p>Movie Titles:</p>
             <ul class="list-group">
               <li class="list-group-item">
-                <a class="nav-link" href="#">Kong: Skull Island</a>
+                <a
+                  class="nav-link"
+                  href="https://www.imdb.com/title/tt3731562"
+                  target="_blank"
+                  >Kong: Skull Island</a
+                >
               </li>
               <li class="list-group-item">
-                <a class="nav-link" href="#">Ghost in the Shell</a>
+                <a
+                  class="nav-link"
+                  href="https://www.imdb.com/title/tt1219827/?ref_=nv_sr_srsg_3_tt_8_nm_0_in_0_q_ghost%2520in"
+                  target="_blank"
+                  >Ghost in the Shell</a
+                >
               </li>
               <li class="list-group-item">
-                <a class="nav-link" href="#">Beauty and the Beast</a>
+                <a
+                  class="nav-link"
+                  href="https://www.imdb.com/title/tt2771200/?ref_=nv_sr_srsg_1_tt_8_nm_0_in_0_q_beauty%2520and%2520the%2520b"
+                  target="_blank"
+                  >Beauty and the Beast</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </div>
-
+      <!-- Showtimes -->
+      <div class="card-deck mt-3" id="showtimes">
+        <div class="card">
+          <img
+            src="./Images/kongskullisland.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Kong: Skull Island</h5>
+            <p class="card-text">
+              After the Vietnam war, a team of scientists explores an uncharted
+              island in the Pacific, venturing into the domain of the mighty
+              Kong and must fight to escape a primal Eden.
+            </p>
+            <span class="badge rounded-pill bg-info">12:00 p.m</span>
+            <span class="badge rounded-pill bg-info">1:30 p.m</span>
+            <span class="badge rounded-pill bg-info">3:00 p.m</span>
+            <span class="badge rounded-pill bg-info">5:30 p.m</span>
+            <span class="badge rounded-pill bg-info">7:00 p.m</span>
+            <span class="badge rounded-pill bg-info">9:30 p.m</span>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./Images/ghostintheshell.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Ghost in the Shell</h5>
+            <p class="card-text">
+              In the near future, Major Mira Killian is the first of her kind: A
+              human saved from a terrible crash, who is cyber-enhanced to be a
+              perfect soldier devoted to stopping the world's most dangerous
+              criminals.
+            </p>
+            <span class="badge rounded-pill bg-info">12:00 p.m</span>
+            <span class="badge rounded-pill bg-info">1:30 p.m</span>
+            <span class="badge rounded-pill bg-info">3:00 p.m</span>
+            <span class="badge rounded-pill bg-info">5:30 p.m</span>
+            <span class="badge rounded-pill bg-info">7:00 p.m</span>
+            <span class="badge rounded-pill bg-info">9:30 p.m</span>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./Images/beautyandthebeast.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Beauty and the Beast</h5>
+            <p class="card-text">
+              A brave, beautiful, and brilliant young woman is imprisoned by a
+              beast in his castle. Despite her fears, she learns to see beyond
+              the beast's hideous exterior and realize the gentle heart of the
+              true prince within him.
+            </p>
+            <span class="badge rounded-pill bg-info">12:00 p.m</span>
+            <span class="badge rounded-pill bg-info">1:30 p.m</span>
+            <span class="badge rounded-pill bg-info">3:00 p.m</span>
+            <span class="badge rounded-pill bg-info">5:30 p.m</span>
+            <span class="badge rounded-pill bg-info">7:00 p.m</span>
+            <span class="badge rounded-pill bg-info">9:30 p.m</span>
+          </div>
+        </div>
+      </div>
+      <!-- Showtimes end -->
       <div class="text-center">
         <form>
-          <h1 class="text-primary my-4">Subscribe to our Newsletter!</h1>
+          <h1 class="text-primary my-4" id="deals">
+            Subscribe to our Newsletter!
+          </h1>
           <div class="form-group">
             <input
               type="email"
