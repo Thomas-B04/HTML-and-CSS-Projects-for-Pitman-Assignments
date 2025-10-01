@@ -1,0 +1,226 @@
+html {
+  background-color: #111;
+  font-family: "Cinzel", serif;
+}
+
+/* Center main content horizontally and limit width */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 90vw;
+}
+
+/* Position image and overlay together, center image */
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin: 20px auto;
+}
+
+/* Style main image: oval shape, border, shadow, and hover effect */
+.image-container .center {
+  display: block;
+  max-width: 400px;
+  max-height: 60vh;
+  width: auto;
+  height: auto;
+  border-radius: 50%/35%;
+  border: 3px solid #333;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+  filter: contrast(120%) brightness(90%);
+  transition: transform 0.3s ease;
+}
+
+/* Overlay: covers image with semi-transparent background and centers text */
+.image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%/35%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+/* Reveal overlay when hovering over image */
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+/* Remove underline from links and enable color transition */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Highlight links on hover */
+a:hover {
+  color: darkred;
+}
+
+/* Style video element: center, border, shadow, rounded corners */
+video {
+  display: block;
+  margin: 20px auto;
+  max-width: 80%;
+  border: 3px solid #333;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+/* Special styling for #bloodborne-link */
+#bloodborne-link {
+  color: inherit;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+  text-decoration: underline;
+}
+
+/* Enhance #bloodborne-link on hover */
+#bloodborne-link:hover {
+  color: darkred;
+  text-shadow: 2px 2px 4px black;
+}
+
+/* Slightly enlarge image on hover for interactive effect */
+.image-container:hover .center {
+  transform: scale(1.02);
+}
+
+/* Navbar: dark background, bottom border, center content */
+.navbar {
+  background-color: #111;
+  border-bottom: 1px solid #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Navbar menu: horizontal layout with spacing between items */
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  gap: 30px;
+}
+
+/* Navbar links: bold, larger font, color and shadow transition */
+.navbar li a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+/* Navbar link hover: dark red color and shadow */
+.navbar li a:hover {
+  color: darkred;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* Main heading: center, dark red color, dramatic shadow */
+h1 {
+  text-align: center;
+  color: darkred;
+  text-shadow: 2px 2px 5px black, 0 0 10px darkred;
+  margin-top: 20px;
+}
+
+/* Paragraphs: readable width, center, bold, light color */
+p {
+  max-width: 50ch;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #ccc;
+  font-weight: bold;
+}
+
+/* Table: center, readable font, styled for clarity */
+table {
+  width: 80%;
+  max-width: 600px;
+  margin: 30px auto;
+  border-collapse: collapse;
+  font-family: "Cinzel", serif;
+  color: #ccc;
+  text-align: left;
+}
+
+/* Table caption: bold, dark red, shadow for emphasis */
+table caption {
+  caption-side: top;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: darkred;
+  text-shadow: 1px 1px 3px black;
+}
+
+/* Table cells: border and padding for separation */
+table th,
+table td {
+  border: 1px solid #333;
+  padding: 10px 15px;
+}
+
+/* Table header: dark background, dark red text */
+table th {
+  background-color: #222;
+  color: darkred;
+}
+
+/* Table row striping: alternate background for readability */
+table tr:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+/* Two-column layout: flexible, responsive, spaced columns */
+.two-column {
+  display: flex;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 90vw;
+  flex-wrap: wrap;
+}
+
+/* Individual column: equal width, dark background, shadow, rounded corners */
+.column {
+  flex: 1;
+  min-width: 250px;
+  background-color: #1a1a1a;
+  color: #ccc;
+  padding: 20px;
+  border: 1px solid #333;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+/* Column headings: dark red, shadow, no top margin */
+.column h2 {
+  color: darkred;
+  text-shadow: 1px 1px 2px black;
+  margin-top: 0;
+}
+
+/* Footer: center text, muted color, subtle top border */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #999;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
